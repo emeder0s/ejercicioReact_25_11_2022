@@ -6,7 +6,7 @@ class Clock extends React.Component {
         this.state = { email: "", pass: "" };
     }
     
-    login(email,pass) {
+    login() {
         console.log("Hago un log in")
     }
 
@@ -36,10 +36,8 @@ class Clock extends React.Component {
                 />
                 <button
                     onClick={() => {
-                    this.login();
-                }}
-                >
-                    Log in
+                    this.login();}}>
+                Log in
                 </button>
             </div>
         );
